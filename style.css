@@ -1,0 +1,252 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-color: #0f172a;
+    color: #e5e7eb;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* ================= NAVBAR (REFERENCE STYLE) ================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #1e293b;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.nav-logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-logo span {
+    color: #38bdf8;
+}
+
+/* LINKS */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+/* NORMAL LINK HOVER */
+.nav-links a:hover {
+    background-color: #1e293b;
+    color: #38bdf8;
+}
+
+/* CONTACT BUTTON STYLE */
+.nav-btn {
+    border: 1px solid #1e293b;
+}
+
+.nav-btn:hover {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+/* ================= SECTIONS (DIVIDED LOOK) ================= */
+section {
+    padding: 80px 60px;
+    border-bottom: 1px solid #1e293b;
+}
+
+/* ================= HERO ================= */
+section:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section:first-of-type h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+section:first-of-type p {
+    font-size: 18px;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+section:first-of-type button {
+    padding: 12px 24px;
+    border: 1px solid #1e293b;
+    background: transparent;
+    color: #e5e7eb;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+section:first-of-type button:hover {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+section:first-of-type img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+/* ================= HEADINGS ================= */
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+/* ================= CARDS (GLOBAL) ================= */
+section div > div,
+section form {
+    background-color: #020617;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #1e293b;
+    transition: transform 0.2s ease;
+}
+
+section div > div:hover {
+    transform: translateY(-4px);
+}
+
+/* ================= ABOUT ================= */
+section:nth-of-type(2) > div {
+    display: flex;
+    gap: 30px;
+}
+
+/* ================= SKILLS ================= */
+section:nth-of-type(3) > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+section:nth-of-type(3) ul {
+    list-style: none;
+}
+
+/* ================= EDUCATION & EXPERIENCE ================= */
+section:nth-of-type(4) > div,
+section:nth-of-type(5) > div {
+    max-width: 800px;
+}
+
+section:nth-of-type(5) ul {
+    padding-left: 20px;
+}
+
+/* ================= CONTACT ================= */
+section:nth-of-type(6) {
+    display: flex;
+    justify-content: center;
+}
+
+section:nth-of-type(6) form {
+    width: 400px;
+}
+
+section:nth-of-type(6) input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+section:nth-of-type(6) button {
+    width: 100%;
+    padding: 12px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+section:nth-of-type(6) button:hover {
+    background-color: #0ea5e9;
+}
+
+/* ================= FOOTER (REFERENCE STYLE) ================= */
+
+footer {
+    background-color: #020617;
+    border-top: 1px solid #1e293b;
+    padding: 60px 20px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+    transition: all 0.2s ease;
+}
+
+.footer-links a:hover {
+    background-color: #1e293b;
+    color: #38bdf8;
+}
+
+.footer-copy {
+    font-size: 14px;
+    color: #9ca3af;
+}
